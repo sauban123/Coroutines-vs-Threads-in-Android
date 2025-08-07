@@ -3,14 +3,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="50dp"
-    android:padding="16dp">
+    >
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnCount="2"
         android:orientation="horizontal"
+        android:layout_gravity="center"
         android:rowCount="10"
         android:useDefaultMargins="true">
 
@@ -27,11 +27,15 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
             android:onClick="onLaunchUsing40Threads"
             android:text="Launch 40 Threads" />
 
         <TextView
             android:id="@+id/tv_result_40"
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Result: Not Run"
@@ -52,12 +56,16 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
             android:onClick="onLaunchUsing4Threads"
             android:text="Launch 4 Threads" />
 
         <TextView
             android:id="@+id/tv_result_4"
             android:layout_width="wrap_content"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:text="Result: Not Run"
             android:textSize="16sp"
@@ -77,13 +85,17 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:onClick="launchThreads"
+            android:layout_gravity="center"
+            android:padding="5dp"
             android:text="Launch Threads" />
 
         <TextView
             android:id="@+id/tv_result_threads"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="Status: Not Started"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -100,7 +112,10 @@
 
         <Button
             android:layout_width="wrap_content"
+            android:padding="5dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
             android:onClick="launchCoroutines"
             android:text="Launch Coroutines" />
 
@@ -109,6 +124,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Status: Not Started"
+            android:layout_gravity="center"
             android:textSize="16sp"
             android:textStyle="bold" />
 
